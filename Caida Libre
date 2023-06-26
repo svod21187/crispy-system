@@ -1,0 +1,18 @@
+'''Crea una función que determine la velocidad, en (m/s), a la que viaja un objeto cuando toca el suelo, en caída libre.
+La función recibe la altura a la que se encontraba el objeto al soltarse, en metros.
+Como es caída libre, la velocidad inicial del objeto es de 0 m/s. Asume que la aceleración debido a la gravedad es de 9.8 m/s^2.
+Puedes usar la siguiente fórmula para calcular la velocidad final (vf), donde vo es la velocidad inicial, a es la aceleración y d la distancia al suelo.
+Vf vf = √oi+ v2 + 2 = a *d
+El valor retornado debe estar redondeado a dos decimales.'''
+
+from math import *
+def vel_suelo (altura:float)->float:
+  v_0 = 0
+  a = 9.8
+  d = altura
+  vf = sqrt(v_0**2+2*a*d)
+  return vf
+#PROGRAMA PRINCIPAL
+altura = input("Introduzca la altura inicial en metros: ")
+resultado = vel_suelo (float(altura))
+print ("La velocidad en el suelo es de:",round(resultado,2), "m/s")
