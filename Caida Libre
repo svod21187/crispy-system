@@ -5,7 +5,7 @@ Puedes usar la siguiente fórmula para calcular la velocidad final (vf), donde v
 Vf vf = √oi+ v2 + 2 = a *d
 El valor retornado debe estar redondeado a dos decimales.'''
 
-from math import *
+from math import sqrt
 def vel_suelo (altura:float)->float:
   v_0 = 0
   a = 9.8
