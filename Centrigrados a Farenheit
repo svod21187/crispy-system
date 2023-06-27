@@ -1,0 +1,6 @@
+#Defina una función que convierta grados centígrados en grados Farenheit
+def conversion(grados_cent:float)->float:
+    return grados_cent*(9/5)+32
+#PROGRAMA PRINCIPAL
+grados_cent = float(input("Introduzca los grados centígrados ºC: "))
+print("", grados_cent, "ºC son", conversion(grados_cent), "ºFarenheit")
