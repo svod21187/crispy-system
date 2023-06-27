@@ -2,14 +2,15 @@
 #Recuerde que ningún número es divisible por 0.
 def es_divisible (n:int, d:int):
     if d == 0:
-        return print ("Ningún número es divisible por 0.")
+        print ("Ningún número es divisible por 0.")
     elif n % (2*d) == 0:
-        return print("2")
+        print("2")
     elif n % d == 0 and not n % (2*d) == 0:
-        return print("1")
+        print("1")
     else:
         print("0")
     
 n = int(input("Introduzca el primer número: "))
 d = int(input("Introduzca el segundo número: "))
 (es_divisible(n, d))
+        
