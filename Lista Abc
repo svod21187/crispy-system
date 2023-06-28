@@ -1,8 +1,12 @@
 #Diseñe una función que reciba una lista de palabras y devuelva, simultáneamente, la primera y la última palabra según el orden alfabético.
 def firlast(posicion):
     n = len(posicion)
-    return ordenada[0], ordenada[(n-1)]
-#PROGRAMA PRINCIPAL
+    for i in range(n):
+      posicion[i] = posicion[i].lower()
+    p1 = ordenada[0]
+    p2 = ordenada[(n-1)]
+    return p1, p2
+#Programa Principal
 posicion = ["base", "escolta", "alero", "ala pivot", "pivot"]
 ordenada = sorted(posicion)
 firlast(posicion)
