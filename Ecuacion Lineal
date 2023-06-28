@@ -1,0 +1,15 @@
+#Diseñe una función que devuelva la solución de la ecuación lineal ax+b=0, dados a y b.
+#Si la ecuación tiene infinitas soluciones o no tiene solución, la función lo detectará y devolverá None.
+def ec_lineal (a:float, b:float):
+  if a == 0:
+    return None #print("No tiene solución")
+  elif a == 0 and b == 0:
+    return None #print("Tiene infinitas soluciones")
+  else:
+    resultado = -(b/a)
+    return resultado
+#PROGRAMA PRINCIPAL
+a = float(input("Introduce a: "))
+b = float(input("Introduce b: "))
+solucion = ec_lineal(a, b)
+print(solucion)
